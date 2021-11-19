@@ -41,7 +41,7 @@ Todas as ações presentes na API, exigem autenticação, que é feita com um to
 
 ---
 
-## Iniciando
+# Iniciando
 
 Saída no console se tudo estiver certo ao iniciar a `API REST`.
 
@@ -52,7 +52,7 @@ Saída no console se tudo estiver certo ao iniciar a `API REST`.
 
 ---
 
-## Criar conta
+# Criar conta
 
 | URL           | Método     | Autenticação requerida |
 |---------------|------------|------------------------|
@@ -106,11 +106,11 @@ Saída no console se tudo estiver certo ao iniciar a `API REST`.
 
 ---
 
-## Autenticação
+# Autenticação
 
 | URL           | Método    | Autenticação requerida |
 |---------------|-----------|------------------------|
-| **`/signin`** | **`GET`** | **`NÃO`**              |
+| **`/signin`** | **`POST`** | **`NÃO`**              |
 
 **Parâmetros obrigatórios:**
 
@@ -141,6 +141,9 @@ Saída no console se tudo estiver certo ao iniciar a `API REST`.
   "error": false
 }
 ```
+Após receber o `token`, você deverá inseri-lo dentro de todas as requisições que exigem autenticação, dentro do **header** **`Authorization`**, como um `Bearer <token>`. Ex:
+
+	header.Authorization = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNkY2NmZj...'
 
 ## Respostas de erros
 
