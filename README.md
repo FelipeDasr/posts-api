@@ -10,7 +10,7 @@
 
 Api desenvolvida com o objetivo de criar novos usuários, além de armazenar, consultar, excluir e modificar seus posts.
 
-A aplicação foi desenvolvida utilizando NodeJS, com o framework ExpressJS. O ORM escolhido foi o Sequelize que, além de ter uma fácil integração, exige um mínimo esforço para fazer a troca para outro banco de dados, caso seja necessário. 
+A aplicação foi desenvolvida utilizando NodeJS, com o framework ExpressJS. O ORM escolhido foi o Sequelize que, além de ter uma fácil integração, exige um mínimo esforço para fazer a troca para outro banco de dados, caso seja necessário. Já falando em banco de dados, a aplicação usa o PostgreSQL, por ser de fácil utlização, e robusto bd.
 
 Todas as ações presentes na API, exigem autenticação, que é feita com um token JWT, passado para o usuário quando ele faz o signin, o token tem válidade de 24hr (1 dia).
 </br>
